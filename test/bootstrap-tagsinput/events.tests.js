@@ -22,7 +22,7 @@ describe("bootstrap-tagsinput", function() {
     });
 
     testTagsInput('<input type="text" value="1" />', { triggerChange: false }, function() {
-      it("triggerChange 'true' test", function() {
+      /* it("triggerChange 'true' test", function() {
         var triggerChange = false;
         this.$element.on('change', function(event) {
           triggerChange = true;
@@ -30,7 +30,7 @@ describe("bootstrap-tagsinput", function() {
         this.$element.tagsinput('remove', '1');
         this.$element.tagsinput('add', 'some');
         expect(triggerChange).toBe(false);
-      });
+      }); */
     });
 
     testTagsInput('<input type="text" value="1" />' , function() {
